@@ -1,0 +1,10 @@
+Level 0
+In order to invoke the game you type in sh -p 2220 bandit0@bandit.labs.overthewire.org and then enter. It will then ask for a password, you type the password bandit0 and press enter even though you won't be able to see the password being typed out.
+Level 0 > 1
+In order to get to the file with the password for the next level you must first go to the home directory by putting in ~. That will confirm and show you the home directory. Using the directory name, in this case /home/bandit0, you want to list what is in there by putting in ls /home/bandit0. Readme should be in this directory, to get the actual password you will have to put in cat readme. The password should now present itself to you and make sure you save it! Logout of the level at the end.
+Level 1 > 2
+Now you must login to the next level. Type in ssh -p 2220 bandit1@bandit.labs.overthewire.org and put in your given password. Once again, put in ~ in order to get to the home directory. List the contents of the directory by typing ls /home/bandit1. The file - should present itself. Because of the name being a dash, you will have to get the password cat ./- . Once again ake sure to save the password! Logout of the level at the end.
+Level 2 > 3
+Once again login to level 2. Type in ssh -p 2220 bandit2@bandit.labs.overthewire.org and put in your given password. Put in ~ to get to the home directory, and list the contents of it by putting in ls /home/bandit2. Because the file has spaces in the name, you must put a backslash after every word of the tile. Type in cat spaces\ in\ this\ filename and your password for level 3 should appear and of course, make sure to save it. Logout of the level at the end. 
+Level 3 > 4
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
