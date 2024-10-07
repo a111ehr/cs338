@@ -1,0 +1,9 @@
+Author: Anne Lehr and Jacky Guzman
+Scenario 1: In order for Alice to send a long message to Bob while avoiding surveillance from Eve, a Diffie-Hellman key exchange procedure must happen. Alice and Bob need an AES key k
+so that Alice's message M can be encrypted with that key. The decryption of ciphertext C will then be complete so that Bob is the only one able to see Alice's message. Because AITM attacks are impossible in this scenario, we don't have to worry about Mal disrupting or manipulating the communication between Alice and Bob.  
+Scenario 2: If Alice wants to send Bob a message but Mal is now able to attack Alice'e message, we would once again begin with a Diffie-Hellman key exchange procedure. Because of Mal's threat, private and public key pairs are needed to further encrypt the integers exchanged in the Diffie-Hellman procedure that are used to create k. The combination of these procedures would produce an AES key k that Alice's message M would be encrypted with. Along with the encrytped message, a hash of the message will also be sent to Bob in order for Bob to know if the message has been modified at any point by Mal. 
+Scenario 3: For Alice to send message M to Bob, key k will have to be created through the Diffie-Hellman procedure that will encrypt m. The hash of m is calculated, and now m can be encrypted by k and the hash can be encrypted using the private key. This will allow for Bob to have confidence that the messages he is receiving are coming from Alice because of the hash and private key. And because of our use of Diffie Helman and AITM being impossible, we insure that that Eve is not able to read Alice's message.
+Scenario 4: 
+Scenario 5: E(S_CA, H(Cert_B))
+Scenario 6:
+Scenario 7:
