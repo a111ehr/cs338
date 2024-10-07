@@ -5,5 +5,5 @@ Scenario 2: If Alice wants to send Bob a message but Mal is now able to attack A
 Scenario 3: For Alice to send message M to Bob, key k will have to be created through the Diffie-Hellman procedure that will encrypt m. The hash of m is calculated, and now m can be encrypted by k and the hash can be encrypted using the private key. This will allow for Bob to have confidence that the messages he is receiving are coming from Alice because of the hash and private key. And because of our use of Diffie Helman and AITM being impossible, we insure that that Eve is not able to read Alice's message.
 Scenario 4: 
 Scenario 5: E(S_CA, H(Cert_B))
-Scenario 6:
-Scenario 7:
+Scenario 6: Cert_B is not enough for Alice to know for a fact it is Bob because it could be an expired, manipulated, or fake certificate. Alice can encode a message utilizing Bob's public key and if Bob is able to send the correct message back then Alice can trust that it is his certificate. 
+Scenario 7: Mal could impersonate Bob through the use of an expired certificate that would allow for Alice to be fooled. Additionally, Mal could allow for Alice to interrogate Bob and have him confirm his identity with the private keys and then step in as soon as that verification is complete with a man in the middle attack. 
