@@ -1,3 +1,10 @@
+Part 1
 1a. There is only one cookie, it's name is theme and the vlaue is default.
 1b. The value of the cookie changed to the color that I changed it to.
 1c. When initially opening the website, the set-cookie and cookie are both set to theme=default. Once the cookie was changed to red, the set-cookie and cookie became theme=red. The headers seen are server, date, content-type, connection, set-cookie, vary, and content-length. The cookie values were the same between the inspector and the regular browser. 
+1d. Yes! It's red!!
+1e. The cookie? Question mark?
+1f. The browser tells the server through the GET request that the theme value has been changed.
+1g. You can modify the cookie in the menu, by changing the value from deafault to blue or red the browser's color will change. 
+1h. By intercepting and editing th GET request to the color blue or red you can change the theme wihthout using the theme menu.
+1i. Cookies are stored in the Library folder, and insde that folder are different folders that belong to browsers where cookies are stored.
